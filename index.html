@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="main-heading">Stock Market Analysis</h1>
+    <main id="main-body">
+      <section id="section1">
+        <canvas id="myChart" aria-label="img"></canvas>
+        <div id="btn-container1">
+          <button id="1mo" class="timeline-btns" onclick="clickHandler(this)">
+            1 Month
+          </button>
+          <button id="3mo" class="timeline-btns" onclick="clickHandler(this)">
+            3 Month
+          </button>
+          <button id="1y" class="timeline-btns" onclick="clickHandler(this)">
+            1 Year
+          </button>
+          <button id="5y" class="timeline-btns" onclick="clickHandler(this)">
+            5 Year
+          </button>
+        </div>
+        <article id="stock-summary">
+          
+        </article>
+      </section>
+
+      <section id="section2">
+        <!-- <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              AAPL
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              GOOGL
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              MSFT
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              AMZN
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              PYPL
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              TSLA
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              JPM
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              NVDA
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              NFLX
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div>
+
+        <div class="stock-stats">
+          <span>
+            <button class="timeline-btns" onclick="selectThisStock(this)">
+              DIS
+            </button>
+          </span>
+          <span>
+            <h3>$3.568</h3>
+          </span>
+          <span>
+            <h3>0.24%</h3>
+          </span>
+        </div> -->
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script>
+        const ctx = document.getElementById("myChart");
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [
+              {
+                label: "# of Votes",
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+    
+    </script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
